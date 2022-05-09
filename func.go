@@ -17,10 +17,10 @@
 package asyncgo
 
 import (
-	`context`
+	"context"
 )
 
-// AwaitFunc {@code Future} {@code Await} func
+// AwaitFunc a func of Future await
 type AwaitFunc func(ctx context.Context) (any, error)
 
 // Run executes the async function
@@ -28,7 +28,7 @@ func Run(fx func() any) Future {
 	return Runz(fx, CreateAwaitFunc)
 }
 
-// Runz executes the async function with custom {@code AwaitFunc} factory
+// Runz executes the async function with custom AwaitFunc factory
 func Runz(fx func() any, factory AwaitFuncFactory) Future {
 	var result any
 	ch := make(chan struct{})
