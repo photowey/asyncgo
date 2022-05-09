@@ -16,8 +16,19 @@
 
 package asyncgo_test
 
+import (
+	"log"
+	"time"
+)
+
 //
 // Test of future
 //
 
-// TODO
+func RunAsync() any {
+	log.Println("1110")
+	time.Sleep(3 * time.Second)
+	log.Println("1111")
+
+	return 11111
+}
