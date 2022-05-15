@@ -17,12 +17,12 @@
 package asyncgo_test
 
 import (
-	`context`
-	`fmt`
-	`log`
-	`time`
+	"context"
+	"fmt"
+	"log"
+	"time"
 
-	`github.com/photowey/asyncgo`
+	"github.com/photowey/asyncgo"
 )
 
 //
@@ -30,7 +30,6 @@ import (
 //
 
 func ExampleRun() {
-
 	// 1.fx
 	fx := func() any {
 		log.Println("async start")
@@ -51,7 +50,6 @@ func ExampleRun() {
 }
 
 func ExampleRunz() {
-
 	// 1.fx
 	fx := func() any {
 		log.Println("async start")

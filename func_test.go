@@ -1,12 +1,12 @@
 package asyncgo_test
 
 import (
-	`context`
-	`fmt`
-	`log`
+	"context"
+	"fmt"
+	"log"
 	"reflect"
 	"testing"
-	`time`
+	"time"
 
 	"github.com/photowey/asyncgo"
 )
