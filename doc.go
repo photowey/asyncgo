@@ -17,7 +17,7 @@
 package asyncgo
 
 //
-// Doc of future
+// The doc of future
 //
 
 // When we need to execution a time-consuming task, we can do it asynchronously,
