@@ -23,8 +23,8 @@ import (
 // AwaitFuncFactory a factory of AwaitFunc
 type AwaitFuncFactory func(ch chan struct{}, result *any) AwaitFunc
 
-// CreateAwaitFunc a func of AwaitFuncFactory
-func CreateAwaitFunc(ch chan struct{}, result *any) AwaitFunc {
+// AwaitFuncFactoryFunc a func of AwaitFuncFactory
+func AwaitFuncFactoryFunc(ch chan struct{}, result *any) AwaitFunc {
 	return func(ctx context.Context) (any, error) {
 		select {
 		case <-ctx.Done():

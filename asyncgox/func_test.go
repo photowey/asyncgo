@@ -82,7 +82,7 @@ func TestRunz(t *testing.T) {
 			name: "Test future Runz()",
 			args: args{
 				fx:      runInAsync,
-				factory: asyncgox.CreateAwaitFunc,
+				factory: asyncgox.AwaitFuncFactoryFunc,
 			},
 			want:    11111,
 			wantErr: false,

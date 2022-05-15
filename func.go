@@ -25,7 +25,7 @@ type AwaitFunc func(ctx context.Context) (any, error)
 
 // Run executes the async function
 func Run(fx func() any) Future {
-	return Runz(fx, CreateAwaitFunc)
+	return Runz(fx, AwaitFuncFactoryFunc)
 }
 
 // Runz executes the async function with custom AwaitFunc factory

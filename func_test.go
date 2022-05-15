@@ -74,7 +74,7 @@ func TestRunz(t *testing.T) {
 			name: "Test future Runz()",
 			args: args{
 				fx:      runInAsync,
-				factory: asyncgo.CreateAwaitFunc,
+				factory: asyncgo.AwaitFuncFactoryFunc,
 			},
 			want:    11111,
 			wantErr: false,
